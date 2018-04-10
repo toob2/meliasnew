@@ -1,0 +1,199 @@
+body {
+    background-color: rgb(238, 219, 180);
+    font-family: Tahoma, Verdana, sans-serif;
+    margin-top: 5rem;
+}
+
+#gallery {
+    padding-top: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+       margin-top: 5rem;
+    }
+
+    #gallery {
+        padding-top: 2.5rem;
+    }   
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        margin-top: 4rem;
+        font-size: 0.85rem;
+    }
+
+    #gallery {
+        margin-top: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 6.25rem;
+        font-size: 0.85rem;
+    }
+
+    #gallery {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        margin-top: 6.5rem;
+        font-size: 0.85rem;
+    }
+
+    #gallery {
+        margin-top: 6.5rem;
+    }
+    
+}
+
+.navbar {
+    background-color: #769835;
+}
+
+
+
+nav .nav-item {
+    font-size: 125%;
+    
+}
+
+nav img {
+    max-width: 340px;
+}
+
+.dropdown-menu {
+    background-color:#cae236;
+    color: white;
+}
+
+
+#cards .img-fluid {
+    height: 35%;
+}
+
+
+.carousel-item img {
+    max-height: 700px;
+    min-width: 40%;
+    max-width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 2rem;
+  width: 2rem;
+  background-size: 100%, 100%; 
+}
+
+#box1 {
+    font-size: 150%;
+    font-weight: 800;
+}
+
+#box1 h3 {
+    font-weight: 800;
+}
+
+#box2 {
+    background: #769835;
+    color: white;
+    padding: 2rem;
+    font-size: 135%;
+    line-height: 175%;
+ 
+}
+
+#box2 i {
+    background-color: black;
+    border-radius: 50%;
+    color:rgb(238, 219, 180);
+}
+
+.card {
+    background: rgb(238, 219, 180);
+}
+
+
+.card-img-top {
+    max-height: 55%;
+}
+
+.card-body {
+    height: 10rem;
+    overflow: auto;
+}
+
+
+#ref {
+    background-image: url(../img/refimg.jpg);
+    min-height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+section h1 {
+    color: white;
+}
+
+
+.panel {
+    background: rgb(163, 178, 197);
+    opacity: 0.7;
+    color:black;
+    font-weight: 600;
+    max-height: 12rem;
+}
+
+#kontakt {
+    background-color:#769835;
+    color: white;
+}
+
+.greenbtn {
+    background: #769835;
+    color: white;
+}
+
+.greenbtn:hover {
+    background: #5a8015;
+    color:#cae236;
+}
+
+.email {
+    text-decoration: none;
+    color: white;
+}
+
+.email:hover{
+    text-decoration: none;
+    color: #cae236;
+}
+
+.footer {
+    background-color:#769835;
+    padding: 1rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+#fbicon {
+    color: #3B5998;
+
+}
+
+#fbicon:hover {
+    opacity: 0.9;
+}
+
+iframe {
+    margin-top: 2px;
+}
+
+
