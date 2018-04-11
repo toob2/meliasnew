@@ -1,55 +1,32 @@
 body {
     background-color: rgb(238, 219, 180);
     font-family: Tahoma, Verdana, sans-serif;
-    margin-top: 5rem;
+    font-size: 1rem;
 }
 
-#gallery {
-    padding-top: 2rem;
-}
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 536px) {
     body {
-       margin-top: 5rem;
+        margin-top: 0rem;
     }
 
     #gallery {
-        padding-top: 2.5rem;
-    }   
+        margin-top: 2rem;
+    }  
 }
 
-@media screen and (max-width: 992px) {
-    body {
-        margin-top: 4rem;
-        font-size: 0.85rem;
-    }
-
+@media only screen and (min-width: 536px) {
+    
     #gallery {
-        margin-top: 6.5rem;
-    }
+        margin-top: 7rem;
+    }  
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        margin-top: 6.25rem;
-        font-size: 0.85rem;
-    }
-
+@media only screen and (min-width: 590px) {
+    
     #gallery {
         margin-top: 1rem;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    body {
-        margin-top: 6.5rem;
-        font-size: 0.85rem;
-    }
-
-    #gallery {
-        margin-top: 6.5rem;
-    }
-    
+    }  
 }
 
 .navbar {
@@ -93,7 +70,12 @@ nav img {
 
 #box1 {
     font-size: 150%;
-    font-weight: 800;
+    font-weight: 600;
+    color: black;
+    background-image: url(../img/pbrush.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 #box1 h3 {
@@ -109,10 +91,9 @@ nav img {
  
 }
 
-#box2 i {
-    background-color: black;
+.fa-check-circle {
     border-radius: 50%;
-    color:rgb(238, 219, 180);
+    color:#cae236;
 }
 
 .card {
@@ -148,7 +129,7 @@ section h1 {
     opacity: 0.7;
     color:black;
     font-weight: 600;
-    max-height: 12rem;
+    max-height: 14rem;
 }
 
 #kontakt {
@@ -197,3 +178,5 @@ iframe {
 }
 
 
+
+ 
