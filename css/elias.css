@@ -5,43 +5,41 @@ body {
 }
 
 
-@media only screen and (max-width: 536px) {
-    body {
-        margin-top: 0rem;
-    }
+@media only screen and (max-width: 576px) {
 
     #gallery {
         margin-top: 2rem;
     }  
+
+    .navbar img {
+        max-width: 250px;
+    }
 }
 
-@media only screen and (min-width: 536px) {
-    
-    #gallery {
-        margin-top: 7rem;
-    }  
-}
-
-@media only screen and (min-width: 590px) {
+@media only screen and (min-width: 576px) {
     
     #gallery {
         margin-top: 1rem;
     }  
 }
 
+@media only screen and (min-width: 768px) {
+    
+    #gallery {
+        margin-top: 1rem;   
+    }  
+
+}
+
+
 .navbar {
     background-color: #769835;
 }
 
 
-
 nav .nav-item {
     font-size: 125%;
     
-}
-
-nav img {
-    max-width: 340px;
 }
 
 .dropdown-menu {
@@ -176,6 +174,7 @@ section h1 {
 iframe {
     margin-top: 2px;
 }
+
 
 
 
