@@ -8,16 +8,28 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">     
-        <link rel="stylesheet" href="css/elias.css" type="text/css">
-        
-        
-
+        <link rel="stylesheet" href="css/elias.css" type="text/css">      
         <meta name="description" content="Ondřej Eliáš - malířské a natěračské práce">   
-        <meta name="keywords" content="malování pokojů kroměříž, malíř kroměříž, malíř vyškov,malování bytů, natěrač kroměříž, malování rodinných domů, natření fasády na domě zlínský kraj, vymalování bytu kroměříž, nátěry fasád kroměříž, nátěry fasády v brně, nátěry fasád ve vyškově,vymalování">     
+        <meta name="keywords" content="malování pokojů kroměříž, malíř kroměříž, malíř vyškov,malování bytů, natěrač kroměříž, malování rodinných domů, natření fasády na domě zlínský kraj, vymalování bytu kroměříž, nátěry fasád kroměříž, nátěry fasády v brně, nátěry fasád ve vyškově,vymalování"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <script src="/js/jquery.scrollTo.min.js"></script> 
+        <script>
+            jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+            $('#link2').click(function() { $.scrollTo($('#sluzby'), 500); });
+            $('#link3').click(function() { $.scrollTo($('#ref'), 500); });
+            $('#link4').click(function() { $.scrollTo($('#kontakt'), 500); });
+        }
+		);
+        </script>
+
     </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand mx-auto" href="index.html"><img src="img/logo1.png" class="img-fluid" alt="logo" id="brandlogo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
@@ -31,11 +43,11 @@
                     </li>
 
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#sluzby">Nabízené služby</a>
+                        <a class="nav-link" href="index.html#sluzby" id="link2">Nabízené služby</a>
                     </li>
 
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="index.html#ref">Reference</a>
+                        <a class="nav-link" href="index.html#ref" id="link3">Reference</a>
                     </li>
 
                     <li class="nav-item dropdown ml-auto">
@@ -52,12 +64,14 @@
                     </li>
 
                     <li class="nav-item ml-auto">
-                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                            <a class="nav-link" href="#kontakt" id="link4">Kontakt</a>
                     </li>    
                 </ul>      
             </div>  
         </div>
     </nav>
+
+    <a href="#" class="scrollup"></a>
 
     <div class="container">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" id="carsousel1">
@@ -129,7 +143,7 @@
     </div>
 
 
-    <div class="container" id="sluzby">
+    <section class="container" id="sluzby">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 card">
                 <img class="card-img-top img-fluid" src="img/card1.jpg" alt="Card image cap">
@@ -158,7 +172,7 @@
                 <a href="gallery3.html" class="btn greenbtn">Ukázky prací</a>            
             </div>           
         </div>
-    </div>
+    </section>
 
     <section class="container mt-1" id="ref">
         <h1 class="text-center">Reference</h1>
@@ -238,31 +252,20 @@
 
   
     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     
-    
-    <script src="/js/jquery.easeScroll.js"></script>
+    <script src='scrolls.js'></script>
+        <script>
+            scroller.init();
+        </script>
 
-    <script>
-    $("html").easeScroll({
-        frameRate: 60,
-        animationTime: 1000,
-        stepSize: 120,
-        pulseAlgorithm: 1,
-        pulseScale: 8,
-        pulseNormalize: 1,
-        accelerationDelta: 20,
-        accelerationMax: 0.5,
-        keyboardSupport: true,
-        arrowScroll: 50,
-        touchpadSupport: true,
-        fixedBackground: true
-        });
-    </script>
-   
-        
+    <script src="jquery.easeScroll.js"></script>
+        <script>
+            $("body").easeScroll();
+        </script>
+
 </body>
 </html>
