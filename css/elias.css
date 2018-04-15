@@ -48,6 +48,10 @@ nav .nav-item {
     color: white;
 }
 
+.carousel-inner {
+    margin: 0.25rem;
+}
+
 
 #cards .img-fluid {
     height: 35%;
@@ -75,6 +79,7 @@ nav .nav-item {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    margin-bottom: 0.25rem;
 }
 
 #box1 h3 {
@@ -87,6 +92,7 @@ nav .nav-item {
     padding: 2rem;
     font-size: 135%;
     line-height: 175%;
+    margin-bottom: 0.25rem;
  
 }
 
@@ -109,7 +115,6 @@ nav .nav-item {
     overflow: auto;
 }
 
-
 #ref {
     background-image: url(../img/refimg.jpg);
     min-height: 20rem;
@@ -121,7 +126,6 @@ nav .nav-item {
 section h1 {
     color: white;
 }
-
 
 .panel {
     background: rgb(163, 178, 197);
@@ -146,6 +150,19 @@ section h1 {
     color:#cae236;
 }
 
+.carouselbtn {
+    background: rgb(163, 178, 197);
+    opacity: 0.8;
+    color:black;
+    font-weight: 600;
+}
+
+.carouselbtn:hover {
+    background: rgb(187, 200, 218);
+    color:black;
+    font-weight: 600;
+}
+
 .email {
     text-decoration: none;
     color: white;
@@ -160,7 +177,7 @@ section h1 {
     background-color:#769835;
     padding: 1rem;
     color: white;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 #fbicon {
@@ -172,9 +189,7 @@ section h1 {
     opacity: 0.9;
 }
 
-iframe {
-    margin-top: 2px;
-}
+
 
 
 

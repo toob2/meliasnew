@@ -1,52 +1,133 @@
 <!doctype html>
-    <html lang="cs">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Ondrej Elias - malirske a nateracske prace</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">     
-        <link rel="stylesheet" href="elias.css" type="text/css">
-        <meta name="description" content="Ondřej Eliáš - malířské a natěračské práce">   
-        <meta name="keywords" content="">     
-    </head>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ondrej Elias - malirske a nateracske prace</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">     
+    <link rel="stylesheet" href="css/elias.css" type="text/css">      
+    <meta name="description" content="Ondřej Eliáš - malířské a natěračské práce">   
+    <meta name="keywords" content="malování pokojů kroměříž, malíř kroměříž, malíř vyškov,malování bytů, natěrač kroměříž, malování rodinných domů, natření fasády na domě zlínský kraj, vymalování bytu kroměříž, nátěry fasád kroměříž, nátěry fasády v brně, nátěry fasád ve vyškově,vymalování"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="js/form.js"></script>
+</head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand mx-auto" href="#"><img src="img/logo1.png" alt="logo"></a>
+            <a class="navbar-brand mx-auto" href="index.html"><img src="img/logo1.png" class="img-fluid" alt="logo" id="brandlogo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                        
+            
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ml-auto active">
-                    <a class="nav-link" href="Index.html">Úvod</a>
+                        <a class="nav-link" href="index.html">Úvod</a>
                     </li>
-            
+
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#cards">Nabízené služby</a>
+                        <a class="nav-link" href="index.html#sluzby" id="link2">Nabízené služby</a>
                     </li>
-            
+
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#reference">Reference</a>
+                        <a class="nav-link" href="index.html#ref" id="link3">Reference</a>
                     </li>
-            
-                    <li class="nav-item ml-auto">
-                        <a class="nav-link" href="gallery.html">Ukázky mých prací</a>
+
+                    <li class="nav-item dropdown ml-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ukázky mých prací
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="gallery1.html">Byty a rodinné domy, tapety</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="gallery2.html">Kanceláře a průmyslové objekty</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="gallery3.html">Fasády, podlahy a bazény</a>
+                            </div>
                     </li>
-            
+
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#">Kontakt</a>
+                            <a class="nav-link" href="#kontakt" id="link4">Kontakt</a>
                     </li>    
                 </ul>      
             </div>  
         </div>
     </nav>
 
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+    
+                <h1>Contact form Tutorial from <a href="http://bootstrapious.com">Bootstrapious.com</a></h1>
+
+                <p class="lead">This is a demo for our tutorial dedicated to crafting working Bootstrap contact form with PHP and AJAX background.</p>
+
+                <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+                            
+                                <div class="controls">
+                            
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_name">Firstname *</label>
+                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_lastname">Lastname *</label>
+                                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_email">Email *</label>
+                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_phone">Phone</label>
+                                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form_message">Message *</label>
+                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </form> 
+    
+                    </div>
+    
+                </div>
 
 
 
@@ -61,12 +142,7 @@
 
 
 
-
-
-
-
-
-
+    </section>
 
 
 
@@ -101,11 +177,33 @@
 
 
         
-        
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+         
+            <footer class="footer text-center">
+                <div class="container">          
+                    <p> Ondřej Eliáš - malířské a natěračské práce &copy; 2018</p>
+                    <p class="small"> Designed by <a class="email" href="mailto:obdrzalek.tom@gmail.com"> [TooB]</p></a>
+                </div>
+            </footer>
+            
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>    
-</body>
+            <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+                
+            <script src="jquery.easeScroll.js"></script>
+                <script>
+                    $("body").easeScroll();
+                </script>
+        
+            <script src="js/jquery.goup.js"></script>
+            <script>
+                $(document).ready(function(){
+                jQuery.goup();
+                });
+        
+            </script>
+        
 
-</html>
+        <script src="validator.js"></script>
+        <script src="contact.js"></script>
+</body>
+        </html>
