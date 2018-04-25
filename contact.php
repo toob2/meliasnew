@@ -4,23 +4,23 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'Demo contact form <demo@domain.com>';
+$from = 'obdrzalek.tom@gmail.com';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <demo@domain.com>';
+$sendTo = 'obdrzalek.tom@gmail.com';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'Nová zpráva z kontaktního formuláře';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Zpráva byla úspěšně odeslána, spojíme se s Vámi co nejdříve';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$errorMessage = 'Bohužel se stala chyba při odesílání formuláře, prosím zkuste znovu později';
 
 /*
  *  LET'S DO THE SENDING
@@ -73,4 +73,3 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 else {
     echo $responseArray['message'];
 }
-Technical requirements for the PHP are:
