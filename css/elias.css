@@ -42,7 +42,8 @@ nav .nav-item {
 }
 
 .carousel-inner {
-    margin: 0.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 #cards .img-fluid {
@@ -50,7 +51,7 @@ nav .nav-item {
 }
 
 .carousel-item img {
-    max-height: 1000px;
+    
     min-width: 100%;
     max-width: 100%;
 }
@@ -67,6 +68,11 @@ nav .nav-item {
     top: 50px;
 }
 
+#sluzby {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
 #box1 {
     font-size: 150%;
     font-weight: 600;
@@ -76,6 +82,12 @@ nav .nav-item {
     background-repeat: no-repeat;
     background-position: top center;
     margin-bottom: 0.25rem;
+}
+
+@media only screen and (max-width: 576px) {  
+    #box1 {
+        margin-bottom: 0.5rem;   
+    }  
 }
 
 #box1 h3 {
@@ -113,8 +125,15 @@ nav .nav-item {
 }
 
 .card-body {
-    min-height: 20rem;
+    min-height: 15rem;
     overflow: auto;
+}
+
+@media only screen and (max-width: 576px) {  
+    .card-body {
+        min-height: 10rem;
+        overflow: auto; 
+    }  
 }
 
 #ref {
@@ -124,14 +143,14 @@ nav .nav-item {
     background-repeat: no-repeat;
     background-position: top center;
     padding-top: 5rem;
+    margin-bottom: 0.5rem;
 }
 
 #formbg {
     background-image: url(../img/3.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;    
 }
 
 @media only screen and (min-width: 1024px) {  
@@ -139,6 +158,14 @@ nav .nav-item {
         min-height: 110rem;   
     }  
 }
+
+@media only screen and (max-width: 576px) {  
+    .card {
+        margin-bottom: 0.5rem;   
+    }  
+}
+
+
 
 section h1 {
     color: rgb(245, 236, 209);
@@ -161,7 +188,7 @@ section h1 {
     color: white;
     padding: 2rem;
     margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .greenbtn {
@@ -189,9 +216,15 @@ section h1 {
     font-size: 130%;
 }
 
-
 #telkontakt{
     margin-top: 3rem;
+}
+
+@media only screen and (max-width: 576px) {  
+    #telkontakt {
+        margin-top: 0rem;   
+        text-align: center
+    }  
 }
 
 .email {
@@ -208,7 +241,6 @@ footer {
     background-color:#769835;
     padding: 1rem;
     color: white;
-    margin-top: 0rem;
 }
 
 #galf{
@@ -226,6 +258,10 @@ footer {
 form {
     margin-top: 2rem;
     margin-bottom: 10rem;
+}
+
+#formbg h1 {
+    padding-top: 2rem;
 }
 
 
