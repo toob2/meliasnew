@@ -7,18 +7,19 @@
     <title>Ondrej Elias - malirske a nateracske prace</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">  
     <link rel="stylesheet" href="css/elias.css" type="text/css">      
     <meta name="description" content="Ondřej Eliáš - malířské a natěračské práce">   
     <meta name="keywords" content="malování pokojů kroměříž, malíř kroměříž, malíř vyškov,malování bytů, natěrač kroměříž, malování rodinných domů, natření fasády na domě zlínský kraj, vymalování bytu kroměříž, nátěry fasád kroměříž, nátěry fasády v brně, nátěry fasád ve vyškově,vymalování"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-    <script src="/js/elias.js"></script>
-    <script src="/js/jquery.scrollTo.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>     
+        <script src="/js/jquery.scrollTo.min.js"></script> 
     <script>
         jQuery(function($)
     {			
-        $('#link2').click(function() { $.scrollTo($('#sluzby'), 500); });
-        $('#link3').click(function() { $.scrollTo($('#ref'), 500); });
+        $('#link2').click(function() { $.scrollTo($('#nabizenesluzby'), 500); });
+        $('#link3').click(function() { $.scrollTo($('#referenceblock'), 500); });
         $('#link4').click(function() { $.scrollTo($('#kontakt'), 500); });
     }
     );
@@ -40,11 +41,11 @@
                     </li>
 
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="index.html#sluzby" id="link2">Nabízené služby</a>
+                        <a class="nav-link" href="index.html#nabizenesluzby" id="link2">Nabízené služby</a>
                     </li>
 
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="index.html#ref" id="link3">Reference</a>
+                        <a class="nav-link" href="index.html#referenceblock" id="link3">Reference</a>
                     </li>
 
                     <li class="nav-item dropdown ml-auto">
@@ -82,9 +83,8 @@
             <div class="carousel-item active">
                 <img class="d-block mx-auto img-fluid" src="img/carousel/car1.jpg" alt="First slide">
                 <div class="carousel-caption">
-                    <a href="form.html" class="btn carouselbtn btn-lg animated zoomInRight">Kontaktní formulář</a>
+                    <a href="form.html" class="btn carouselbtn btn-lg animated zoomInDown">Kontaktní formulář</a>
                 </div>
-     
             </div>
             
             <div class="carousel-item">
@@ -130,71 +130,80 @@
 
     <div class="container">
         <div class="row">
-            <div id="box1" class="col-md-7">                       
-                <h3 class="text-center pt-4 text-strong">Provádím:</h3> 
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-paint-brush"></i> veškeré malby a nátěry bytů, rodinných domů</li>
-                    <li><i class="fas fa-paint-brush"></i> kanceláří, průmyslových objektů, lepení tapet.</li>
-                    <li><i class="fas fa-paint-brush"></i> nátěry fasád, podlah, bazénů atd.</li>
-                    <li><i class="fas fa-paint-brush"></i> potravinářské nátěry</li>
-                    <li> <i class="fas fa-paint-brush"></i> vysokotlakové stříkání ocelových konstrukcí</li>
+            <div id="box1" class="col-md-6 col-lg-6">                       
+                <h3 class="text-center pt-4 text-strong"><u>Provádíme:</h3></u><br>
+                <ul id="list1">
+                    <li>Veškeré malby a nátěry bytů, rodinných domů,</li>
+                    <li>kanceláří, průmyslových objektů, lepení tapet.</li>
+                    <li>Nátěry fasád, podlah, bazénů atd.</li>
+                    <li>Potravinářské nátěry</li>
+                    <li>Vysokotlaké stříkání ocelových konstrukcí</li>
                 </ul>       
             </div>
     
-            <div id="box2" class="col-md-5">
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-check-circle"></i> Kvalitní provedení</li>
-                    <li><i class="fas fa-check-circle"></i> Spolehlivost a důvěra</li>
-                    <li><i class="fas fa-check-circle"></i> Kvalifikovaný Malíř</li>
-                    <li><i class="fas fa-check-circle"></i> Konkurenceschopné ceny</li>
-                    <li><i class="fas fa-check-circle"></i> Použití výhradně kvalitních materiálů</li>
-                    <li><i class="fas fa-check-circle"></i> Osobní přístup k zákazníkovi</li>
+            <div id="box2" class="col-md-6 col-lg-6">
+                <h3 class="text-center pt-4 text-strong"><u>U nás najdete:</u></h3><br>
+                <ul id="list2">
+                    <li> Kvalitní provedení</li>
+                    <li> Spolehlivost a důvěru</li>
+                    <li> Konkurenceschopné ceny</li>
+                    <li> Použití výhradně kvalitních materiálů</li>
+                    <li> Osobní přístup k zákazníkovi</li>
+                    <li> Kvalifované malíře</li>
                 </ul>
             </div>
         </div>
     </div>
 
+    <section id="nabizenesluzby" class="text-center animated pulse">
+        <h2>Nabízené služby</h2>
+    </section>
+
     <section class="container" id="sluzby">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 card">
                 <div class="cardwrapper">
-                    <img class="card-img-top img-fluid" src="img/card1.jpg" alt="Card image cap">
+                    <a href="gallery1.html"><img class="card-img-top img-fluid" src="img/card1.jpg" alt="Card image cap"></a>
                 </div>
                 <div class="card-body">
                     <h4 class="card-title">Malby a nátěry bytů a rodinných domů, lepení tapet</h4>
                     <p class="card-text">Provádím malby tuzemskými i zahraničními materiály, lepení tapet a dekorativní techniky, dle přání zákazníka, včetně přípravy podkladu a zakrytí.</p>  
                 </div>
-                <a href="gallery1.html" class="btn greenbtn">Ukázky prací</a>
+                <a href="gallery1.html" class="btn greenbtn btn-lg">Ukázky prací</a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12 card ">
                 <div class="cardwrapper">
-                    <img class="card-img-top img-fluid" src="img/card2.jpg" alt="Card image cap">
+                    <a href="gallery2.html"><img class="card-img-top img-fluid" src="img/card2.jpg" alt="Card image cap"></a>
                 </div>
                 <div class="card-body">
                     <h4 class="card-title">Malby a nátěry kanceláří a průmyslových objektů</h4>
                     <p class="card-text">Provádím malby průmyslových objektů, škol, školek, ordinací a kanceláří, dle rozsahu možno použít stříkací zařízení airless, které vlastním.</p>
                 </div>
-                <a href="gallery2.html" class="btn greenbtn">Ukázky prací</a>
+                <a href="gallery2.html" class="btn greenbtn btn-lg">Ukázky prací</a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12 card">
                 <div class="cardwrapper">
-                <img class="card-img-top img-fluid" src="img/card3.jpg" alt="Card image cap">
+                    <a href="gallery3.html"><img class="card-img-top img-fluid" src="img/card3.jpg" alt="Card image cap"></a>
                 </div>
                 <div class="card-body">
                     <h4 class="card-title">Nátěry fasád, podlah a bazénů</h4>
                     <p class="card-text"> Provádím nátěry všech možných podkladů od fasád, ze svého lešení do výšky cca 7m, přes střechy z horolezeckých úvazků, po ocelové konstrukce všech typů, nátěry zárubní, dveří, oken, podlah, bazénů atd</p>
                 </div>  
-                <a href="gallery3.html" class="btn greenbtn">Ukázky prací</a>            
+                <a href="gallery3.html" class="btn greenbtn btn-lg">Ukázky prací</a>            
             </div>           
         </div>
     </section>
 
+    <section id="referenceblock" class="text-center animated pulse">
+        <h2>Reference</h2>
+    </section>
+
     <section class="container mt-1" id="ref">
-        <h1 class="text-center">Reference</h1>
+        
         <div class="row">
-            <div class="panel panel-default col-md-4 mx-auto">
+            <div class="panel panel-default col-sm-8 col-md-5 col-lg-4 mx-auto">
                 <div class="panel-body">
                     <i class="fas fa-quote-left fa-2x"></i>
                     <blockquote class="blockquote-reverse">
@@ -204,7 +213,7 @@
                 </div>
             </div>         
 
-            <div class="panel panel-default col-md-4 mx-auto">
+            <div class="panel panel-default col-sm-8 col-md-5 col-lg-4 mx-auto">
                 <div class="panel-body">
                     <i class="fas fa-quote-left fa-2x"></i>
                     <blockquote class="blockquote-reverse">
@@ -218,17 +227,16 @@
        <br><br>
 
        <div class="row">
-       <a class="btn greenbtn btn-lg ml-auto mr-5 mb-3" href="https://www.facebook.com/pg/Ond%C5%99ej-Eli%C3%A1%C5%A1-mal%C3%AD%C5%99sk%C3%A9-a-nat%C4%9Bra%C4%8Dsk%C3%A9-slu%C5%BEby-514429395419465/reviews/?ref=page_internal" target="_blank"  role="button">Více referencí
+       <a class="btn greenbtn btn-lg ml-auto mr-5 mb-3" href="https://www.facebook.com/pg/Ond%C5%99ej-Eli%C3%A1%C5%A1-mal%C3%AD%C5%99sk%C3%A9-a-nat%C4%9Bra%C4%8Dsk%C3%A9-slu%C5%BEby-514429395419465/reviews/?ref=page_internal" target="_blank"  role="button">Více referencí na Facebooku
        </a>
        </div>
 
     </section>
-        
-    </div>
 
-    <div >
+    <div>
         <div class="mt-1 text-center" id="kontakt">
-            <h2>Kontaktujte mě na  <i class="fas fa-phone"></i>  608 538 262 nebo  <a class="email" href="mailto:ellias@email.cz"><i class="fas fa-envelope-open"></i> ellias@email.cz</h2></a>
+            <h2>Kontakt</h2>
+            <h2><i class="fas fa-phone"></i>  608 538 262 nebo  <a class="email" href="mailto:ellias@email.cz"><i class="fas fa-envelope-open"></i> ellias@email.cz</h2></a>
         </div>
     </div>
     
@@ -236,15 +244,14 @@
         <div class="row">
             <div id="telkontakt" class="col-lg-5 col-md-5 col-sm-12 float-left">
                 <h3>Telefon:</h3>                                
-                <p>608 538 262</p>
+                <h5>608 538 262</h5><br>
                 <h3>Adresa:</h3>
-                <p>Ondrej Eliáš</p>
-                <p>Komenského 572</p>
-                <p>Morkovice-Slížany</p>
-                <p>768 33</p>
+                <h6>Ondřej Eliáš</h6>
+                <h6>Komenského 572</h6>
+                <h6>Morkovice-Slížany</h6>
+                <p>768 33</p><br>
                 <a href="https://www.facebook.com/Ond%C5%99ej-Eli%C3%A1%C5%A1-mal%C3%AD%C5%99sk%C3%A9-a-nat%C4%9Bra%C4%8Dsk%C3%A9-slu%C5%BEby-514429395419465/" target="_blank"><i class="fab fa-facebook fa-5x" id="fbicon"></i></a>
-                
-
+              
             </div>
 
             <div class="col-lg-7 col-md-7 col-sm-12 float-right">
@@ -255,7 +262,7 @@
 
     <footer class="footer text-center">
         <div class="container">          
-            <p> Ondřej Eliáš - malířské a natěračské práce &copy; 2018</p>
+            <h5> Ondřej Eliáš - malířské a natěračské práce &copy; 2018</h5>
             <p class="small"> Designed by <a class="email" href="mailto:obdrzalek.tom@gmail.com"> [TooB]</p></a>
         </div>
     </footer>
@@ -264,10 +271,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
         
+    
     <script src="jquery.easeScroll.js"></script>
         <script>
-            $("body").easeScroll();
-        </script>
+            $(document).ready(function(){
+            $("body").easeScroll()
+        });
+    </script>
 
     <script src="js/jquery.goup.js"></script>
     <script>
@@ -275,5 +285,29 @@
         jQuery.goup();
         });
     </script>
+
+
+    <script> 
+        //waypoint animations - laggy atm
+/*
+        $(document).ready(function(){
+        
+        $('#nabizenesluzby').waypoint(function() {
+        $('#nabizenesluzby').addClass('animated pulse');
+        }, { offset: '80%' });
+
+        $('#referenceblock').waypoint(function() {
+        $('#referenceblock').addClass('animated pulse');
+        }, { offset: '70%' });
+
+        $('#kontakt').waypoint(function() {
+        $('#kontakt').addClass('animated pulse');
+        }, { offset: '80%' });
+
+        });
+
+/*        
+    </script>
+
 </body>
 </html>
